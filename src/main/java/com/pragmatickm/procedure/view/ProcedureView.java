@@ -23,8 +23,10 @@
 package com.pragmatickm.procedure.view;
 
 import com.aoindustries.encoding.TextInXhtmlEncoder;
+import com.pragmatickm.procedure.model.Procedure;
 import com.pragmatickm.procedure.servlet.impl.ProcedureTreeImpl;
 import com.semanticcms.core.model.Page;
+import com.semanticcms.core.servlet.PageUtils;
 import com.semanticcms.core.servlet.View;
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -54,6 +56,11 @@ public class ProcedureView extends View {
 	@Override
 	public String getName() {
 		return VIEW_NAME;
+	}
+
+	@Override
+	public boolean isApplicable(ServletContext servletContext, HttpServletRequest request, HttpServletResponse response, Page page) throws ServletException, IOException {
+		return PageUtils.hasElement(servletContext, request, response, page, Procedure.class, true);
 	}
 
 	@Override
