@@ -75,7 +75,7 @@ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 							<configuration>
 								<links>
 									<link>http://docs.oracle.com/javaee/6/api/</link>
-									<link>https://www.aoindustries.com/docs/ao-encoding/</link>
+									<link>https://www.aoindustries.com/ao-encoding/apidocs/</link>
 									<link>https://pragmatickm.com/procedure/model/apidocs/</link>
 									<link>https://pragmatickm.com/procedure/servlet/apidocs/</link>
 									<link>https://semanticcms.com/core/model/apidocs/</link>
