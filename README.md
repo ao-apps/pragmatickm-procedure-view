@@ -1,5 +1,5 @@
 # [<img src="ao-logo.png" alt="AO Logo" width="35" height="40">](https://www.aoindustries.com/) [PragmaticKM](https://pragmatickm.com/) / [Procedure](https://pragmatickm.com/procedure/) / [View](https://pragmatickm.com/procedure/view/)
-[SemanticCMS](https://semanticcms.com/) view of procedures in the current page and all children.
+[SemanticCMS](https://semanticcms.com/) view of all procedures in the current page and all children.
 
 ## Project Links
 * [Project Home](https://pragmatickm.com/procedure/view/)
