@@ -70,7 +70,12 @@ public class ProcedureView extends View {
 		HttpServletResponse response,
 		Page page
 	) {
-		return "All Procedures" + TITLE_SEPARATOR + page.getTitle() + TITLE_SEPARATOR + page.getPageRef().getBook().getTitle();
+		String bookTitle = page.getPageRef().getBook().getTitle();
+		if(bookTitle != null && !bookTitle.isEmpty()) {
+			return "All Procedures" + TITLE_SEPARATOR + page.getTitle() + TITLE_SEPARATOR + bookTitle;
+		} else {
+			return "All Procedures" + TITLE_SEPARATOR + page.getTitle();
+		}
 	}
 
 	@Override
