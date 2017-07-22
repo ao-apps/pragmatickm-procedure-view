@@ -5,8 +5,8 @@
 * [Project Home](https://pragmatickm.com/procedure/view/)
 * [Changelog](https://pragmatickm.com/procedure/view/changelog)
 * [API Docs](https://pragmatickm.com/procedure/view/apidocs/)
-* [Maven Repository](scpexe://private.cvs.aoindustries.com/var/maven2/pragmatickm)
-* [Git](ssh://private.cvs.aoindustries.com/var/git/pragmatickm-procedure-view)
+* [Maven Central Repository](https://search.maven.org/#search%7Cgav%7C1%7Cg:%22com.pragmatickm%22%20AND%20a:%22pragmatickm-procedure-view%22)
+* [GitHub](https://github.com/aoindustries/pragmatickm-procedure-view)
 
 ## Contact Us
 For questions or support, please [contact us](https://aoindustries.com/contact):
