@@ -61,7 +61,6 @@ along with pragmatickm-procedure-view.  If not, see <http://www.gnu.org/licenses
 			datePublished="2017-07-27T00:42:51-0500"
 			groupId="@{documented.groupId}"
 			artifactId="@{documented.artifactId}"
-			repository="https://aorepo.org/maven2"
 			scmUrl="@{documented.scm.url}"
 		>
 			<ul>
