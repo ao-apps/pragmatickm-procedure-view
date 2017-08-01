@@ -1,6 +1,6 @@
 /*
  * pragmatickm-procedure-view - SemanticCMS view of all procedures in the current page and all children.
- * Copyright (C) 2014, 2015, 2016  AO Industries, Inc.
+ * Copyright (C) 2014, 2015, 2016, 2017  AO Industries, Inc.
  *     support@aoindustries.com
  *     7262 Bull Pen Cir
  *     Mobile, AL 36695
@@ -27,6 +27,7 @@ import com.pragmatickm.procedure.model.Procedure;
 import com.pragmatickm.procedure.servlet.impl.ProcedureTreeImpl;
 import com.semanticcms.core.model.Page;
 import com.semanticcms.core.servlet.PageUtils;
+import com.semanticcms.core.servlet.SemanticCMS;
 import com.semanticcms.core.servlet.View;
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -70,7 +71,10 @@ public class ProcedureView extends View {
 		HttpServletResponse response,
 		Page page
 	) {
-		String bookTitle = page.getPageRef().getBook().getTitle();
+		String bookTitle = SemanticCMS.getInstance(servletContext)
+			.getBook(page.getPageRef().getBookRef())
+			.getTitle()
+		;
 		if(bookTitle != null && !bookTitle.isEmpty()) {
 			return "All Procedures" + TITLE_SEPARATOR + page.getTitle() + TITLE_SEPARATOR + bookTitle;
 		} else {
