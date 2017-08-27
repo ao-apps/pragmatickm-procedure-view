@@ -24,11 +24,11 @@ package com.pragmatickm.procedure.view;
 
 import com.aoindustries.encoding.TextInXhtmlEncoder;
 import com.pragmatickm.procedure.model.Procedure;
-import com.pragmatickm.procedure.servlet.impl.ProcedureTreeImpl;
+import com.pragmatickm.procedure.renderer.html.ProcedureTreeHtmlRenderer;
+import com.semanticcms.core.controller.PageUtils;
+import com.semanticcms.core.controller.SemanticCMS;
 import com.semanticcms.core.model.Page;
-import com.semanticcms.core.servlet.PageUtils;
-import com.semanticcms.core.servlet.SemanticCMS;
-import com.semanticcms.core.servlet.View;
+import com.semanticcms.core.renderer.html.View;
 import java.io.IOException;
 import java.io.PrintWriter;
 import javax.servlet.ServletContext;
@@ -108,6 +108,6 @@ public class ProcedureView extends View {
 		TextInXhtmlEncoder.encodeTextInXhtml(page.getTitle(), out);
 		out.println("</h1>");
 
-		ProcedureTreeImpl.writeProcedureTree(servletContext, request, response, out, page);
+		ProcedureTreeHtmlRenderer.writeProcedureTree(servletContext, request, response, out, page);
 	}
 }
