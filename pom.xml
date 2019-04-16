@@ -40,7 +40,7 @@ along with pragmatickm-procedure-view.  If not, see <http://www.gnu.org/licenses
 		<description.html><![CDATA[<a target="_top" href="https://semanticcms.com/">SemanticCMS</a> view of all procedures in the current page and all children.]]></description.html>
 	</properties>
 
-	<name>PragmaticKM 1 Procedure View</name>
+	<name>PragmaticKM Procedure View</name>
 	<url>https://pragmatickm.com/procedure/view/</url>
 	<description>SemanticCMS view of all procedures in the current page and all children.</description>
 	<inceptionYear>2013</inceptionYear>
