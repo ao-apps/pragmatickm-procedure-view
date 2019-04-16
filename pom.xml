@@ -64,12 +64,12 @@ along with pragmatickm-procedure-view.  If not, see <http://www.gnu.org/licenses
 							<links>
 								<link>${javac.link.javaApi}</link>
 								<link>${javac.link.javaeeApi.6}</link>
-								<link>https://aoindustries.com/ao-encoding/apidocs</link>
-								<link>https://pragmatickm.com/procedure/model/apidocs</link>
-								<link>https://pragmatickm.com/procedure/renderer/html/apidocs</link>
-								<link>https://semanticcms.com/core/controller/apidocs</link>
-								<link>https://semanticcms.com/core/model/apidocs</link>
-								<link>https://semanticcms.com/core/renderer/html/apidocs</link>
+								<link>https://aoindustries.com/ao-encoding/apidocs/</link>
+								<link>https://pragmatickm.com/procedure/model/apidocs/</link>
+								<link>https://pragmatickm.com/procedure/renderer/html/apidocs/</link>
+								<link>https://semanticcms.com/core/controller/apidocs/</link>
+								<link>https://semanticcms.com/core/model/apidocs/</link>
+								<link>https://semanticcms.com/core/renderer/html/apidocs/</link>
 							</links>
 						</configuration>
 					</plugin>
