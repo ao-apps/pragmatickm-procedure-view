@@ -1,6 +1,6 @@
 /*
  * pragmatickm-procedure-view - SemanticCMS view of all procedures in the current page and all children.
- * Copyright (C) 2014, 2015, 2016  AO Industries, Inc.
+ * Copyright (C) 2014, 2015, 2016, 2017  AO Industries, Inc.
  *     support@aoindustries.com
  *     7262 Bull Pen Cir
  *     Mobile, AL 36695
