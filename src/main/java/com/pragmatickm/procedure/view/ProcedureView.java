@@ -1,6 +1,6 @@
 /*
  * pragmatickm-procedure-view - SemanticCMS view of all procedures in the current page and all children.
- * Copyright (C) 2014, 2015, 2016, 2017  AO Industries, Inc.
+ * Copyright (C) 2014, 2015, 2016, 2017, 2020  AO Industries, Inc.
  *     support@aoindustries.com
  *     7262 Bull Pen Cir
  *     Mobile, AL 36695
@@ -22,14 +22,13 @@
  */
 package com.pragmatickm.procedure.view;
 
-import com.aoindustries.encoding.TextInXhtmlEncoder;
+import com.aoindustries.html.Html;
 import com.pragmatickm.procedure.model.Procedure;
 import com.pragmatickm.procedure.servlet.impl.ProcedureTreeImpl;
 import com.semanticcms.core.model.Page;
 import com.semanticcms.core.servlet.PageUtils;
 import com.semanticcms.core.servlet.View;
 import java.io.IOException;
-import java.io.PrintWriter;
 import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
@@ -98,12 +97,11 @@ public class ProcedureView extends View {
 	}
 
 	@Override
-	public void doView(ServletContext servletContext, HttpServletRequest request, HttpServletResponse response, Page page) throws ServletException, IOException, SkipPageException {
-		PrintWriter out = response.getWriter();
-		out.print("<h1>All Procedures in ");
-		TextInXhtmlEncoder.encodeTextInXhtml(page.getTitle(), out);
-		out.println("</h1>");
+	public void doView(ServletContext servletContext, HttpServletRequest request, HttpServletResponse response, Html html, Page page) throws ServletException, IOException, SkipPageException {
+		html.out.write("<h1>All Procedures in ");
+		html.text(page.getTitle());
+		html.out.write("</h1>\n");
 
-		ProcedureTreeImpl.writeProcedureTree(servletContext, request, response, out, page);
+		ProcedureTreeImpl.writeProcedureTree(servletContext, request, response, html, page);
 	}
 }
