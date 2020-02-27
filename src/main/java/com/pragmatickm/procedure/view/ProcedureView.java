@@ -28,10 +28,14 @@ import com.pragmatickm.procedure.renderer.html.ProcedureTreeHtmlRenderer;
 import com.semanticcms.core.controller.PageUtils;
 import com.semanticcms.core.controller.SemanticCMS;
 import com.semanticcms.core.model.Page;
+import com.semanticcms.core.renderer.html.HtmlRenderer;
 import com.semanticcms.core.renderer.html.View;
 import java.io.IOException;
 import javax.servlet.ServletContext;
+import javax.servlet.ServletContextEvent;
+import javax.servlet.ServletContextListener;
 import javax.servlet.ServletException;
+import javax.servlet.annotation.WebListener;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.jsp.SkipPageException;
@@ -41,7 +45,21 @@ import javax.servlet.jsp.SkipPageException;
  */
 public class ProcedureView extends View {
 
-	static final String VIEW_NAME = "procedures";
+	public static final String NAME = "procedures";
+
+	@WebListener("Registers the \"" + NAME + "\" view in HtmlRenderer.")
+	public static class Initializer implements ServletContextListener {
+		@Override
+		public void contextInitialized(ServletContextEvent event) {
+			HtmlRenderer.getInstance(event.getServletContext()).addView(new ProcedureView());
+		}
+		@Override
+		public void contextDestroyed(ServletContextEvent event) {
+			// Do nothing
+		}
+	}
+
+	private ProcedureView() {}
 
 	@Override
 	public Group getGroup() {
@@ -55,7 +73,7 @@ public class ProcedureView extends View {
 
 	@Override
 	public String getName() {
-		return VIEW_NAME;
+		return NAME;
 	}
 
 	@Override
