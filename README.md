@@ -30,7 +30,7 @@
 * [Project Home](https://pragmatickm.com/procedure/view/)
 * [Changelog](https://pragmatickm.com/procedure/view/changelog)
 * [API Docs](https://pragmatickm.com/procedure/view/apidocs/)
-* [Maven Central Repository](https://search.maven.org/#search%7Cgav%7C1%7Cg:%22com.pragmatickm%22%20AND%20a:%22pragmatickm-procedure-view%22)
+* [Maven Central Repository](https://search.maven.org/artifact/com.pragmatickm/pragmatickm-procedure-view)
 * [GitHub](https://github.com/aoindustries/pragmatickm-procedure-view)
 
 ## Contact Us
