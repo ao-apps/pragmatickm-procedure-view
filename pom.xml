@@ -53,6 +53,11 @@ along with pragmatickm-procedure-view.  If not, see <http://www.gnu.org/licenses
 		<tag>HEAD</tag>
 	</scm>
 
+	<issueManagement>
+		<system>GitHub Issues</system>
+		<url>https://github.com/aoindustries/pragmatickm-procedure-view/issues</url>
+	</issueManagement>
+
 	<profiles>
 		<profile>
 			<id>release</id>
