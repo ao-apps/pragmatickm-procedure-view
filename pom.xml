@@ -46,7 +46,6 @@ along with pragmatickm-procedure-view.  If not, see <http://www.gnu.org/licenses
 	<inceptionYear>2013</inceptionYear>
 
 	<scm>
-		<!-- Can't inherit due to multi-module -->
 		<connection>scm:git:git://github.com/aoindustries/pragmatickm-procedure-view.git</connection>
 		<developerConnection>scm:git:git@github.com:aoindustries/pragmatickm-procedure-view.git</developerConnection>
 		<url>https://github.com/aoindustries/pragmatickm-procedure-view</url>
