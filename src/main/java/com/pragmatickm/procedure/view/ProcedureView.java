@@ -1,6 +1,6 @@
 /*
  * pragmatickm-procedure-view - SemanticCMS view of all procedures in the current page and all children.
- * Copyright (C) 2014, 2015, 2016, 2017, 2020  AO Industries, Inc.
+ * Copyright (C) 2014, 2015, 2016, 2017, 2020, 2021  AO Industries, Inc.
  *     support@aoindustries.com
  *     7262 Bull Pen Cir
  *     Mobile, AL 36695
@@ -22,7 +22,7 @@
  */
 package com.pragmatickm.procedure.view;
 
-import com.aoindustries.html.Html;
+import com.aoindustries.html.Document;
 import com.pragmatickm.procedure.model.Procedure;
 import com.pragmatickm.procedure.renderer.html.ProcedureTreeHtmlRenderer;
 import com.semanticcms.core.controller.PageUtils;
@@ -119,11 +119,11 @@ public class ProcedureView extends View {
 	}
 
 	@Override
-	public void doView(ServletContext servletContext, HttpServletRequest request, HttpServletResponse response, Html html, Page page) throws ServletException, IOException, SkipPageException {
-		html.out.write("<h1>All Procedures in ");
-		html.text(page.getTitle());
-		html.out.write("</h1>\n");
+	public void doView(ServletContext servletContext, HttpServletRequest request, HttpServletResponse response, Document document, Page page) throws ServletException, IOException, SkipPageException {
+		document.out.write("<h1>All Procedures in ");
+		document.text(page.getTitle());
+		document.out.write("</h1>\n");
 
-		ProcedureTreeHtmlRenderer.writeProcedureTree(servletContext, request, response, html, page);
+		ProcedureTreeHtmlRenderer.writeProcedureTree(servletContext, request, response, document, page);
 	}
 }
