@@ -120,9 +120,9 @@ public class ProcedureView extends View {
 
 	@Override
 	public void doView(ServletContext servletContext, HttpServletRequest request, HttpServletResponse response, Document document, Page page) throws ServletException, IOException, SkipPageException {
-		document.out.write("<h1>All Procedures in ");
-		document.text(page.getTitle());
-		document.out.write("</h1>\n");
+		document.h1__(h1 -> h1
+			.text("All Procedures in ").text(page.getTitle())
+		).nl();
 
 		ProcedureTreeHtmlRenderer.writeProcedureTree(servletContext, request, response, document, page);
 	}
