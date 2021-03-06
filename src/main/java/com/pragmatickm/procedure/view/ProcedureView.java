@@ -22,7 +22,7 @@
  */
 package com.pragmatickm.procedure.view;
 
-import com.aoindustries.html.Document;
+import com.aoindustries.html.FlowContent;
 import com.pragmatickm.procedure.model.Procedure;
 import com.pragmatickm.procedure.renderer.html.ProcedureTreeHtmlRenderer;
 import com.semanticcms.core.controller.PageUtils;
@@ -119,11 +119,11 @@ public class ProcedureView extends View {
 	}
 
 	@Override
-	public void doView(ServletContext servletContext, HttpServletRequest request, HttpServletResponse response, Document document, Page page) throws ServletException, IOException, SkipPageException {
-		document.h1__(h1 -> h1
+	public <__ extends FlowContent<__>> void doView(ServletContext servletContext, HttpServletRequest request, HttpServletResponse response, __ flow, Page page) throws ServletException, IOException, SkipPageException {
+		flow.h1__(h1 -> h1
 			.text("All Procedures in ").text(page.getTitle())
 		).nl();
 
-		ProcedureTreeHtmlRenderer.writeProcedureTree(servletContext, request, response, document, page);
+		ProcedureTreeHtmlRenderer.writeProcedureTree(servletContext, request, response, flow, page);
 	}
 }
