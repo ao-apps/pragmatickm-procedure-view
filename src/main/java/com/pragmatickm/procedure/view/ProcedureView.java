@@ -122,7 +122,7 @@ public class ProcedureView extends View {
 	public <__ extends FlowContent<__>> void doView(ServletContext servletContext, HttpServletRequest request, HttpServletResponse response, __ flow, Page page) throws ServletException, IOException, SkipPageException {
 		flow.h1__(h1 -> h1
 			.text("All Procedures in ").text(page.getTitle())
-		).nl();
+		);
 
 		ProcedureTreeHtmlRenderer.writeProcedureTree(servletContext, request, response, flow, page);
 	}
