@@ -182,7 +182,7 @@ along with pragmatickm-procedure-view.  If not, see <http://www.gnu.org/licenses
 				<groupId>com.pragmatickm</groupId><artifactId>pragmatickm-procedure-model</artifactId><version>1.4.1${POST-SNAPSHOT}</version>
 			</dependency>
 			<dependency>
-				<groupId>com.pragmatickm</groupId><artifactId>pragmatickm-procedure-servlet</artifactId><version>1.5.1-SNAPSHOT<!-- ${POST-SNAPSHOT} --></version>
+				<groupId>com.pragmatickm</groupId><artifactId>pragmatickm-procedure-servlet</artifactId><version>1.5.1${POST-SNAPSHOT}</version>
 			</dependency>
 			<dependency>
 				<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-model</artifactId><version>1.13.0${POST-SNAPSHOT}</version>
