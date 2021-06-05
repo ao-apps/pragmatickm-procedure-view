@@ -22,7 +22,7 @@
  */
 package com.pragmatickm.procedure.view;
 
-import com.aoindustries.html.servlet.FlowContent;
+import com.aoapps.html.servlet.FlowContent;
 import com.pragmatickm.procedure.model.Procedure;
 import com.pragmatickm.procedure.renderer.html.ProcedureTreeHtmlRenderer;
 import com.semanticcms.core.controller.PageUtils;
