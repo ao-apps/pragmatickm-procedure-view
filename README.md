@@ -10,6 +10,12 @@
 
 [![Build](https://github.com/aoindustries/pragmatickm-procedure-view/workflows/Build/badge.svg?branch=master)](https://github.com/aoindustries/pragmatickm-procedure-view/actions?query=workflow%3ABuild)
 [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.pragmatickm/pragmatickm-procedure-view/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.pragmatickm/pragmatickm-procedure-view)
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?branch=master&project=com.pragmatickm%3Apragmatickm-procedure-view&metric=alert_status)](https://sonarcloud.io/dashboard?branch=master&id=com.pragmatickm%3Apragmatickm-procedure-view)
+[![Lines of Code](https://sonarcloud.io/api/project_badges/measure?branch=master&project=com.pragmatickm%3Apragmatickm-procedure-view&metric=ncloc)](https://sonarcloud.io/component_measures?branch=master&id=com.pragmatickm%3Apragmatickm-procedure-view&metric=ncloc)  
+[![Reliability Rating](https://sonarcloud.io/api/project_badges/measure?branch=master&project=com.pragmatickm%3Apragmatickm-procedure-view&metric=reliability_rating)](https://sonarcloud.io/component_measures?branch=master&id=com.pragmatickm%3Apragmatickm-procedure-view&metric=Reliability)
+[![Security Rating](https://sonarcloud.io/api/project_badges/measure?branch=master&project=com.pragmatickm%3Apragmatickm-procedure-view&metric=security_rating)](https://sonarcloud.io/component_measures?branch=master&id=com.pragmatickm%3Apragmatickm-procedure-view&metric=Security)
+[![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?branch=master&project=com.pragmatickm%3Apragmatickm-procedure-view&metric=sqale_rating)](https://sonarcloud.io/component_measures?branch=master&id=com.pragmatickm%3Apragmatickm-procedure-view&metric=Maintainability)
+[![Coverage](https://sonarcloud.io/api/project_badges/measure?branch=master&project=com.pragmatickm%3Apragmatickm-procedure-view&metric=coverage)](https://sonarcloud.io/component_measures?branch=master&id=com.pragmatickm%3Apragmatickm-procedure-view&metric=Coverage)
 
 [SemanticCMS](https://github.com/aoindustries/semanticcms) view of all procedures in the current page and all children.
 
