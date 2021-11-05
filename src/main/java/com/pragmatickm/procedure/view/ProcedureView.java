@@ -43,7 +43,7 @@ import javax.servlet.jsp.SkipPageException;
 /**
  * SemanticCMS view of all procedures in the current page and all children.
  */
-public class ProcedureView extends View {
+public final class ProcedureView extends View {
 
 	public static final String NAME = "procedures";
 
@@ -59,7 +59,9 @@ public class ProcedureView extends View {
 		}
 	}
 
-	private ProcedureView() {}
+	private ProcedureView() {
+		// Do nothing
+	}
 
 	@Override
 	public Group getGroup() {
