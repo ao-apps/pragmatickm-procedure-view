@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
 pragmatickm-procedure-view - SemanticCMS view of all procedures in the current page and all children.
-Copyright (C) 2017, 2019, 2020, 2021  AO Industries, Inc.
+Copyright (C) 2017, 2019, 2020, 2021, 2022  AO Industries, Inc.
     support@aoindustries.com
     7262 Bull Pen Cir
     Mobile, AL 36695
@@ -37,7 +37,7 @@ along with pragmatickm-procedure-view.  If not, see <https://www.gnu.org/license
 		shortTitle="Changelog"
 		tocLevels="1"
 		datePublished="2017-07-25T21:16:41-05:00"
-		dateModified="2021-07-22T22:40:17-05:00"
+		dateModified="2022-03-21T05:50:15-05:00"
 	>
 		<c:if test="${fn:endsWith('@{project.version}', '-SNAPSHOT') and !fn:endsWith('@{project.version}', '-POST-SNAPSHOT')}">
 			<changelog:release
@@ -50,6 +50,7 @@ along with pragmatickm-procedure-view.  If not, see <https://www.gnu.org/license
 			>
 				<ul>
 					<li>Added <ao:a href="https://semanticcms.com/core/pages/">SemanticCMS Core Pages</ao:a> support.</li>
+					<li>Updated dependencies.</li>
 				</ul>
 			</changelog:release>
 		</c:if>
