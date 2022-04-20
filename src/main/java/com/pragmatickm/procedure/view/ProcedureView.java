@@ -45,84 +45,84 @@ import javax.servlet.jsp.SkipPageException;
  */
 public final class ProcedureView extends View {
 
-	public static final String NAME = "procedures";
+  public static final String NAME = "procedures";
 
-	@WebListener("Registers the \"" + NAME + "\" view in SemanticCMS.")
-	public static class Initializer implements ServletContextListener {
-		@Override
-		public void contextInitialized(ServletContextEvent event) {
-			SemanticCMS.getInstance(event.getServletContext()).addView(new ProcedureView());
-		}
-		@Override
-		public void contextDestroyed(ServletContextEvent event) {
-			// Do nothing
-		}
-	}
+  @WebListener("Registers the \"" + NAME + "\" view in SemanticCMS.")
+  public static class Initializer implements ServletContextListener {
+    @Override
+    public void contextInitialized(ServletContextEvent event) {
+      SemanticCMS.getInstance(event.getServletContext()).addView(new ProcedureView());
+    }
+    @Override
+    public void contextDestroyed(ServletContextEvent event) {
+      // Do nothing
+    }
+  }
 
-	private ProcedureView() {
-		// Do nothing
-	}
+  private ProcedureView() {
+    // Do nothing
+  }
 
-	@Override
-	public Group getGroup() {
-		return Group.VARIABLE;
-	}
+  @Override
+  public Group getGroup() {
+    return Group.VARIABLE;
+  }
 
-	@Override
-	public String getDisplay() {
-		return "Procedures";
-	}
+  @Override
+  public String getDisplay() {
+    return "Procedures";
+  }
 
-	@Override
-	public String getName() {
-		return NAME;
-	}
+  @Override
+  public String getName() {
+    return NAME;
+  }
 
-	@Override
-	public boolean isApplicable(ServletContext servletContext, HttpServletRequest request, HttpServletResponse response, Page page) throws ServletException, IOException {
-		return PageUtils.hasElement(servletContext, request, response, page, Procedure.class, true);
-	}
+  @Override
+  public boolean isApplicable(ServletContext servletContext, HttpServletRequest request, HttpServletResponse response, Page page) throws ServletException, IOException {
+    return PageUtils.hasElement(servletContext, request, response, page, Procedure.class, true);
+  }
 
-	@Override
-	public String getTitle(
-		ServletContext servletContext,
-		HttpServletRequest request,
-		HttpServletResponse response,
-		Page page
-	) {
-		String bookTitle = page.getPageRef().getBook().getTitle();
-		if(bookTitle != null && !bookTitle.isEmpty()) {
-			return "All Procedures" + TITLE_SEPARATOR + page.getTitle() + TITLE_SEPARATOR + bookTitle;
-		} else {
-			return "All Procedures" + TITLE_SEPARATOR + page.getTitle();
-		}
-	}
+  @Override
+  public String getTitle(
+    ServletContext servletContext,
+    HttpServletRequest request,
+    HttpServletResponse response,
+    Page page
+  ) {
+    String bookTitle = page.getPageRef().getBook().getTitle();
+    if (bookTitle != null && !bookTitle.isEmpty()) {
+      return "All Procedures" + TITLE_SEPARATOR + page.getTitle() + TITLE_SEPARATOR + bookTitle;
+    } else {
+      return "All Procedures" + TITLE_SEPARATOR + page.getTitle();
+    }
+  }
 
-	@Override
-	public String getDescription(Page page) {
-		return null;
-	}
+  @Override
+  public String getDescription(Page page) {
+    return null;
+  }
 
-	@Override
-	public String getKeywords(Page page) {
-		return null;
-	}
+  @Override
+  public String getKeywords(Page page) {
+    return null;
+  }
 
-	/**
-	 * This view does not provide additional information unobtainable from source content,
-	 * exclude from search indexes.
-	 */
-	@Override
-	public boolean getAllowRobots(ServletContext servletContext, HttpServletRequest request, HttpServletResponse response, Page page) {
-		return false;
-	}
+  /**
+   * This view does not provide additional information unobtainable from source content,
+   * exclude from search indexes.
+   */
+  @Override
+  public boolean getAllowRobots(ServletContext servletContext, HttpServletRequest request, HttpServletResponse response, Page page) {
+    return false;
+  }
 
-	@Override
-	public <__ extends FlowContent<__>> void doView(ServletContext servletContext, HttpServletRequest request, HttpServletResponse response, __ flow, Page page) throws ServletException, IOException, SkipPageException {
-		flow.h1__(h1 -> h1
-			.text("All Procedures in ").text(page.getTitle())
-		);
+  @Override
+  public <__ extends FlowContent<__>> void doView(ServletContext servletContext, HttpServletRequest request, HttpServletResponse response, __ flow, Page page) throws ServletException, IOException, SkipPageException {
+    flow.h1__(h1 -> h1
+      .text("All Procedures in ").text(page.getTitle())
+    );
 
-		ProcedureTreeImpl.writeProcedureTree(servletContext, request, response, flow, page);
-	}
+    ProcedureTreeImpl.writeProcedureTree(servletContext, request, response, flow, page);
+  }
 }
