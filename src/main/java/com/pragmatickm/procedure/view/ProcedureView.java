@@ -47,6 +47,9 @@ public final class ProcedureView extends View {
 
   public static final String NAME = "procedures";
 
+  /**
+   * Registers the "{@link #NAME}" view in {@link SemanticCMS}.
+   */
   @WebListener("Registers the \"" + NAME + "\" view in SemanticCMS.")
   public static class Initializer implements ServletContextListener {
     @Override
@@ -119,11 +122,16 @@ public final class ProcedureView extends View {
   }
 
   @Override
-  public <__ extends FlowContent<__>> void doView(ServletContext servletContext, HttpServletRequest request, HttpServletResponse response, __ flow, Page page) throws ServletException, IOException, SkipPageException {
+  public <__ extends FlowContent<__>> void doView(
+      ServletContext servletContext,
+      HttpServletRequest request,
+      HttpServletResponse response,
+      __ flow,
+      Page page
+  ) throws ServletException, IOException, SkipPageException {
     flow.h1__(h1 -> h1
-            .text("All Procedures in ").text(page.getTitle())
+        .text("All Procedures in ").text(page.getTitle())
     );
-
     ProcedureTreeImpl.writeProcedureTree(servletContext, request, response, flow, page);
   }
 }
