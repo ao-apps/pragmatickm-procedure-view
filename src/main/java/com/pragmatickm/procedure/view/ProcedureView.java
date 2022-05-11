@@ -48,6 +48,9 @@ public final class ProcedureView extends View {
 
   public static final String NAME = "procedures";
 
+  /**
+   * Registers the "{@link #NAME}" view in {@link HtmlRenderer}.
+   */
   @WebListener("Registers the \"" + NAME + "\" view in HtmlRenderer.")
   public static class Initializer implements ServletContextListener {
     @Override
@@ -94,8 +97,7 @@ public final class ProcedureView extends View {
   ) {
     String bookTitle = SemanticCMS.getInstance(servletContext)
         .getBook(page.getPageRef().getBookRef())
-        .getTitle()
-    ;
+        .getTitle();
     if (bookTitle != null && !bookTitle.isEmpty()) {
       return "All Procedures" + TITLE_SEPARATOR + page.getTitle() + TITLE_SEPARATOR + bookTitle;
     } else {
@@ -123,11 +125,16 @@ public final class ProcedureView extends View {
   }
 
   @Override
-  public <__ extends FlowContent<__>> void doView(ServletContext servletContext, HttpServletRequest request, HttpServletResponse response, __ flow, Page page) throws ServletException, IOException, SkipPageException {
+  public <__ extends FlowContent<__>> void doView(
+      ServletContext servletContext,
+      HttpServletRequest request,
+      HttpServletResponse response,
+      __ flow,
+      Page page
+  ) throws ServletException, IOException, SkipPageException {
     flow.h1__(h1 -> h1
-            .text("All Procedures in ").text(page.getTitle())
+        .text("All Procedures in ").text(page.getTitle())
     );
-
     ProcedureTreeHtmlRenderer.writeProcedureTree(servletContext, request, response, flow, page);
   }
 }
