@@ -29,7 +29,7 @@ along with pragmatickm-procedure-view.  If not, see <https://www.gnu.org/license
     <relativePath>../../../parent/pom.xml</relativePath>
   </parent>
 
-  <groupId>com.pragmatickm</groupId><artifactId>pragmatickm-procedure-view-book</artifactId><version>1.5.1-SNAPSHOT</version>
+  <groupId>com.pragmatickm</groupId><artifactId>pragmatickm-procedure-view-book</artifactId><version>1.5.1</version>
   <packaging>bundle</packaging>
 
   <properties>
@@ -76,7 +76,7 @@ along with pragmatickm-procedure-view.  If not, see <https://www.gnu.org/license
     <connection>scm:git:git://github.com/ao-apps/pragmatickm-procedure-view.git</connection>
     <developerConnection>scm:git:git@github.com:ao-apps/pragmatickm-procedure-view.git</developerConnection>
     <url>https://github.com/ao-apps/pragmatickm-procedure-view</url>
-    <tag>HEAD</tag>
+    <tag>pragmatickm-procedure-view-book-1.5.1</tag>
   </scm>
 
   <issueManagement>
