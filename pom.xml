@@ -46,7 +46,7 @@ along with pragmatickm-procedure-view.  If not, see <https://www.gnu.org/license
     <sonar.coverage.exclusions>**.*</sonar.coverage.exclusions>
   </properties>
 
-  <name>PragmaticKM Procedure View²</name>
+  <name>PragmaticKM Procedure View</name>
   <url>https://pragmatickm.com/procedure/view/</url>
   <description>SemanticCMS view of all procedures in the current page and all children.</description>
   <inceptionYear>2013</inceptionYear>

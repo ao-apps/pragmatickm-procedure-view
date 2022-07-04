@@ -36,15 +36,15 @@ along with pragmatickm-procedure-view.  If not, see <https://www.gnu.org/license
     <module.name>com.pragmatickm.procedure.view.book</module.name>
     <!-- These values are copied from the project being documented -->
     <documented.artifactId>pragmatickm-procedure-view</documented.artifactId>
-    <documented.name>PragmaticKM Procedure View²</documented.name>
+    <documented.name>PragmaticKM Procedure View</documented.name>
     <documented.description>SemanticCMS view of all procedures in the current page and all children.</documented.description>
 
     <description.html><![CDATA[Documentation for <a target="${javadoc.target}" href="${project.url}">${documented.name}</a> in <a target="${javadoc.target}" href="https://semanticcms.com/">SemanticCMS</a> format.]]></description.html>
   </properties>
 
-  <name>PragmaticKM Procedure View² Book</name>
+  <name>PragmaticKM Procedure View Book</name>
   <url>https://pragmatickm.com/procedure/view/</url>
-  <description>Documentation for PragmaticKM Procedure View² in SemanticCMS format.</description>
+  <description>Documentation for PragmaticKM Procedure View in SemanticCMS format.</description>
   <inceptionYear>2013</inceptionYear>
 
   <licenses>
