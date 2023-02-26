@@ -23,7 +23,7 @@
 * [Project Home](https://pragmatickm.com/procedure/view/)
 * [Changelog](https://pragmatickm.com/procedure/view/changelog)
 * [API Docs](https://pragmatickm.com/procedure/view/apidocs/)
-* [Maven Central Repository](https://search.maven.org/artifact/com.pragmatickm/pragmatickm-procedure-view)
+* [Maven Central Repository](https://central.sonatype.com/search?namespace=com.pragmatickm&q=a%3Apragmatickm-procedure-view)
 * [GitHub](https://github.com/ao-apps/pragmatickm-procedure-view)
 
 ## Contact Us
