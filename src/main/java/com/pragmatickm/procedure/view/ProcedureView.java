@@ -49,7 +49,7 @@ public final class ProcedureView extends View {
   public static final String NAME = "procedures";
 
   /**
-   * Registers the "{@link #NAME}" view in {@link HtmlRenderer}.
+   * Registers the "{@link ProcedureView#NAME}" view in {@link HtmlRenderer}.
    */
   @WebListener("Registers the \"" + NAME + "\" view in HtmlRenderer.")
   public static class Initializer implements ServletContextListener {
