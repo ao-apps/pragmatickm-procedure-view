@@ -21,7 +21,6 @@
  * along with pragmatickm-procedure-view.  If not, see <https://www.gnu.org/licenses/>.
  */
 module com.pragmatickm.procedure.view {
-  exports com.pragmatickm.procedure.view;
   // Direct
   requires com.aoapps.html.any; // <groupId>com.aoapps</groupId><artifactId>ao-fluent-html-any</artifactId>
   requires com.aoapps.html.servlet; // <groupId>com.aoapps</groupId><artifactId>ao-fluent-html-servlet</artifactId>
@@ -32,4 +31,6 @@ module com.pragmatickm.procedure.view {
   requires com.pragmatickm.procedure.servlet; // <groupId>com.pragmatickm</groupId><artifactId>pragmatickm-procedure-servlet</artifactId>
   requires com.semanticcms.core.model; // <groupId>com.semanticcms</groupId><artifactId>semanticcms-core-model</artifactId>
   requires com.semanticcms.core.servlet; // <groupId>com.semanticcms</groupId><artifactId>semanticcms-core-servlet</artifactId>
+
+  exports com.pragmatickm.procedure.view;
 }
